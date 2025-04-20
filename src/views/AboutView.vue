@@ -127,6 +127,8 @@
       <img src="../assets/aboutImg/about12.png" alt="about12" />
     </div>
   </div>
+  <!-- test o'zgarish -->
+
   <div class="news">
     <div class="news-title">
       <h3>Better information, Better health</h3>
