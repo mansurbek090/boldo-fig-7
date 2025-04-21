@@ -1,49 +1,21 @@
 <template>
   <header>
-    <!-- Header-start -->
     <div class="header-start">
-      <img src="../assets/headerImg/h-1.svg" alt="h-logo" />
-      <div class="header-contacts">
-        <div class="header-contact">
-          <img src="../assets/headerImg/h-2.svg" alt="h-2img" />
-          <div class="header-contact__info">
-            <h4>Emergency</h4>
-            <h5>(237) 681-812-255</h5>
-          </div>
-        </div>
-        <div class="header-contact">
-          <img src="../assets/headerImg/h-3.svg" alt="h-3img" />
-          <div class="header-contact__info">
-            <h4>Work Hour</h4>
-            <h5>09:00 - 20:00 Everyday</h5>
-          </div>
-        </div>
-        <div class="header-contact">
-          <img src="../assets/headerImg/h-4.svg" alt="h-4img" />
-          <div class="header-contact__info">
-            <h4>Location</h4>
-            <h5>0123 Some Place</h5>
-          </div>
-        </div>
+      <div class="header-icon">
+        <img src="../assets/headerImg/header1.png" alt="header1" />
+        <h1>Boldo</h1>
       </div>
-    </div>
-
-    <!-- Header-end -->
-    <div class="header-end">
-      <nav>
-        <ul class="header-end__items">
+      <nav class="header-navabar">
+        <ul class="header-router">
           <RouterLink :to="{ name: 'home' }">Home</RouterLink>
-          <RouterLink :to="{ name: 'about' }">About</RouterLink>
+          <RouterLink :to="{ name: 'product' }">Product</RouterLink>
           <RouterLink :to="{ name: 'services' }">Services</RouterLink>
-          <RouterLink :to="{ name: 'single' }">Single</RouterLink>
-          <RouterLink :to="{ name: 'doctors' }">Doctors</RouterLink>
+          <RouterLink :to="{ name: 'about' }">About</RouterLink>
+          <div class="tbn">
+            <button>Log in</button>
+          </div>
         </ul>
       </nav>
-
-      <div class="header-end-buttons">
-        <img src="../assets/headerImg/h-5.png" alt="h-5img" />
-        <a href="#">Appointment</a>
-      </div>
     </div>
   </header>
 </template>
@@ -53,88 +25,61 @@ import { RouterLink } from "vue-router";
 export default {};
 </script>
 
-<style>
-/* Header-start */
+<style scoped>
 .header-start {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 180px;
-}
-.header-contacts {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 21px;
-}
-.header-contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.header-contact__info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 5px;
-}
-.header-contact__info h4 {
-  font-weight: 600;
-  font-size: calc(18 / 19.2 * 1vw);
-  text-transform: uppercase;
-  color: #1f2b6c;
-}
-.header-contact__info h5 {
-  font-weight: 500;
-  font-size: calc(18 / 19.2 * 1vw);
-  color: #159eec;
+  height: calc(45 / 19.2 * 1vw);
+  justify-content: space-around;
+  padding-bottom: calc(150 / 19.2 * 1vw);
+  padding-top: calc(60 / 19.2 * 1vw);
+  gap: 500px;
 }
 
-/* Header-end */
-.header-end {
+.header-icon {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  background-color: #1f2b6c;
-  padding: 0 180px;
 }
-.header-end__items {
+.header-icon img {
+  width: 26px;
+  height: 34px;
+}
+.header-icon h1 {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 43.25px;
+  line-height: 33.64px;
+  letter-spacing: 0%;
+  color: rgba(10, 38, 64, 1);
+  padding-left: 12px;
+}
+
+.header-router {
+  list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 0;
-  gap: 20px;
+  gap: 40px;
 }
-.header-end__items a {
-  transition: all 500ms ease;
-  color: white;
-  font-size: calc(18 / 19.2 * 1vw);
+
+.header-router button {
+  width: 130px;
+  height: 40px;
+  border: 2px solid rgba(10, 38, 64, 1);
+  border-radius: 25px;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0%;
+  color: rgba(10, 38, 64, 1);
+  background: none;
+  transition: 0.6s ease;
 }
-.header-end__items a:hover {
-  color: #159eec;
+
+.tbn {
+  position: relative;
+  bottom: 8px;
 }
-.header-end-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-.header-end-buttons a {
-  transition: all 500ms ease;
-  display: inline-block;
-  padding: 13px 35px;
-  background-color: #bfd2f8;
-  border-radius: 50px;
-  color: #1f2b6c;
-  font-size: calc(18 / 19.2 * 1vw);
-}
-.header-end-buttons a:hover {
-  transform: scale(1.1);
-  background-color: #159eec;
-  color: white;
+.header-router button:hover {
+  background: rgba(10, 38, 64, 1);
+  border: 2px solid rgb(172, 209, 245);
+  color: rgb(172, 209, 245);
 }
 </style>
