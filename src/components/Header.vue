@@ -3,7 +3,6 @@
     <div class="header-start">
       <div class="header-icon">
         <img src="../assets/headerImg/header1.png" alt="header1" />
-        <h1>Boldo</h1>
       </div>
       <nav class="header-navabar">
         <ul class="header-router">
@@ -29,28 +28,12 @@ export default {};
 .header-start {
   width: 100%;
   display: flex;
-  height: calc(45 / 19.2 * 1vw);
-  justify-content: space-around;
-  padding-bottom: calc(150 / 19.2 * 1vw);
-  padding-top: calc(60 / 19.2 * 1vw);
-  gap: 500px;
-}
-
-.header-icon {
-  display: flex;
-}
-.header-icon img {
-  width: 26px;
-  height: 34px;
-}
-.header-icon h1 {
-  font-family: Manrope;
-  font-weight: 700;
-  font-size: 43.25px;
-  line-height: 33.64px;
-  letter-spacing: 0%;
-  color: rgba(10, 38, 64, 1);
-  padding-left: 12px;
+  justify-content: space-between;
+  padding: 36px 100px;
+  position: fixed;
+  background-color: rgba(10, 38, 64, 1);
+  align-items: center;
+  z-index: 1000;
 }
 
 .header-router {
@@ -58,7 +41,9 @@ export default {};
   display: flex;
   gap: 40px;
 }
-
+.header-router a {
+  color: rgba(255, 255, 255, 1);
+}
 .header-router button {
   width: 130px;
   height: 40px;
@@ -71,6 +56,7 @@ export default {};
   color: rgba(10, 38, 64, 1);
   background: none;
   transition: 0.6s ease;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .tbn {
@@ -78,8 +64,8 @@ export default {};
   bottom: 8px;
 }
 .header-router button:hover {
-  background: rgba(10, 38, 64, 1);
-  border: 2px solid rgb(172, 209, 245);
-  color: rgb(172, 209, 245);
+  transform: scale(1.1);
+  border: 2px solid rgb(44, 50, 56);
+  color: red;
 }
 </style>
