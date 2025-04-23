@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import { RouterLink } from "vue-router";
-export default {};
+import { RouterLink } from 'vue-router'
+export default {}
 </script>
 
 <style scoped>
@@ -30,7 +30,7 @@ export default {};
   display: flex;
   justify-content: space-between;
   padding: 36px 100px;
-  position: fixed;
+  position: fi;
   background-color: rgba(10, 38, 64, 1);
   align-items: center;
   z-index: 1000;
