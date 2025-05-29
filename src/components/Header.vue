@@ -7,9 +7,9 @@
       <nav class="header-navabar">
         <ul class="header-router">
           <RouterLink :to="{ name: 'home' }">Home</RouterLink>
-          <RouterLink :to="{ name: 'product' }">Product</RouterLink>
           <RouterLink :to="{ name: 'services' }">Services</RouterLink>
           <RouterLink :to="{ name: 'about' }">About</RouterLink>
+          <RouterLink :to="{ name: 'product' }">Blog</RouterLink>
           <div class="tbn">
             <button>Log in</button>
           </div>
@@ -20,11 +20,14 @@
 </template>
 
 <script>
-import { RouterLink } from 'vue-router'
-export default {}
+import { RouterLink } from "vue-router";
+export default {};
 </script>
 
 <style scoped>
+.header-start a:hover {
+  border-bottom: 2px solid red;
+}
 .header-start {
   width: 100%;
   display: flex;
@@ -64,8 +67,8 @@ export default {}
   bottom: 8px;
 }
 .header-router button:hover {
-  transform: scale(1.1);
-  border: 2px solid rgb(44, 50, 56);
-  color: red;
+  background: rgba(10, 38, 64, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 </style>

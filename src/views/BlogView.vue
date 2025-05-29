@@ -85,11 +85,12 @@
         </div>
       </div>
     </div>
+
     <button>Load more</button>
   </section>
 </template>
 <script>
-export default {}
+export default {};
 </script>
 <style scoped>
 .hero {
@@ -156,7 +157,7 @@ hr {
   margin-left: 100px;
 }
 .latest-news {
-  padding: 96px 170px;
+  padding: 96px 260px;
 }
 .latest-news > h2 {
   font-weight: 400;
@@ -223,5 +224,11 @@ hr {
   font-size: 20px;
   line-height: 28px;
   color: #0a2640;
+  transition: 0.5s ease;
+}
+.latest-news button:hover {
+  background: #0a2640;
+  color: white;
+  border: 1px solid #0a2640;
 }
 </style>
