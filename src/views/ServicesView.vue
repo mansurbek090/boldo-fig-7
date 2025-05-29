@@ -52,17 +52,17 @@
 
     <div class="ourTeamCards">
       <div class="ourTeamCard">
-        <img src="../assets/serviceImages/i1.png" alt="Michael Scott">
+        <img src="../assets/serviceImages/I1.png" alt="Michael Scott">
         <h2>Michael Scott</h2>
         <span>General Manager</span>
       </div>
       <div class="ourTeamCard">
-        <img src="../assets/serviceImages/i1.png" alt="Michael Scott">
+        <img src="../assets/serviceImages/I1.png" alt="Michael Scott">
         <h2>Michael Scott</h2>
         <span>General Manager</span>
       </div>
       <div class="ourTeamCard">
-        <img src="../assets/serviceImages/i1.png" alt="Michael Scott">
+        <img src="../assets/serviceImages/I1.png" alt="Michael Scott">
         <h2>Michael Scott</h2>
         <span>General Manager</span>
       </div>
@@ -70,28 +70,28 @@
 
     <div class="ourTeamCards2">
       <div class="ourTeamCard2">
-        <img src="../assets/serviceImages/i2.png" alt="Dwight Schrute">
+        <img src="../assets/serviceImages/I2.png" alt="Dwight Schrute">
         <div>
           <h2>Dwight Schrute</h2>
           <span>General Manager</span>
         </div>
       </div>
       <div class="ourTeamCard2">
-        <img src="../assets/serviceImages/i3.png" alt="Pam Beesley">
+        <img src="../assets/serviceImages/I3.png" alt="Pam Beesley">
         <div>
           <h2>Pam Beesley</h2>
           <span>General Manager</span>
         </div>
       </div>
       <div class="ourTeamCard2">
-        <img src="../assets/serviceImages/i3.png" alt="Pam Beesley">
+        <img src="../assets/serviceImages/I3.png" alt="Pam Beesley">
         <div>
           <h2>Pam Beesley</h2>
           <span>General Manager</span>
         </div>
       </div>
       <div class="ourTeamCard2">
-        <img src="../assets/serviceImages/i2.png" alt="Dwight Schrute">
+        <img src="../assets/serviceImages/I2.png" alt="Dwight Schrute">
         <div>
           <h2>Dwight Schrute</h2>
           <span>General Manager</span>
